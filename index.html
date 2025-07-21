@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./camera.css">
+</head>
+<body>
+    <div class="flex flex-col items-center">
+        <h1 class="text-4xl font-bold text-center">BML Calculator</h1>
+        <p class="mt-3 text-xl text-center">Enter your Weight and height below to calculate your Body Mass Index(BMI).</p>
+        <div class="p-4">
+            <label for="weight" class="text-md font-bold">Weight</label>
+            <input type="text" id="weight"
+            class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 mt-3"
+            placeholder="Enter weight in kg">
+            <p class="text-[#ec3f20]" id="weightError"></p>
+        </div>
+        <div class="p-4">
+            <label for="height" class="text-md font-bold">Height</label>
+            <input type="text" id="height"
+            class="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400 mt-3"
+            placeholder="Enter height in cm">
+            <p class="text-[#ec3f20]" id="heightError"></p>
+        </div>
+        <div class="flex ">
+            <button id="calculate" class="bg-[#1674de] p-3 text-[#ffffff] rounded m-1 ">Calculate BMI</button>
+            <button id="reset" class="bg-[#77797a] p-3 text-[#ffffff] rounded m-1 hidden">Reset</button>
+        </div>
+        <p class="bg-blue-300" id="results"></p>
+    </div>
+    <script src="./action.js"></script>
+</body>
+</html>
